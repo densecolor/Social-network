@@ -1,0 +1,262 @@
+
+* {
+	margin: 0; padding: 0;
+} 
+body {
+	margin: 0; padding: 0;
+	font: 71%/1.8em  Verdana, 'Trebuchet MS', Arial, Sans-serif;
+	background: url(images/headerbg-blue.gif) repeat-x;
+	color: #666666;	
+	text-align: center;		
+}
+/* les titres sur la page */
+h1,h2{
+	font: bold 1em 'Trebuchet MS', Tahoma, Sans-serif;
+	text-transform: uppercase;
+	color: #555;
+}
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.3em; }
+h3 { font-size: 1.2em; text-transform: none;}
+
+/* la zone de texte pour chercher des membres en haut à droite. */
+#header .searchform {
+	position: absolute;
+	top: 5px; right: 3px;	
+	background:none;
+	border:none;
+	color:#fff;
+}
+#header .searchform input {
+padding: 0px;
+margin:0px;
+font: normal 1em/1.5em Verdana, sans-serif;
+}
+
+
+
+/* on donne un style identique à tous les boutons sur la page */
+ .button
+	{
+width: 88px;
+font: bold 1em 'Trebuchet MS', Tahoma, Sans-serif;
+line-height: 15px;
+text-align: center;
+color: #fff;
+border-radius: 5px;
+margin:0 20px 20px 0;
+position: relative;
+overflow: hidden;
+background: #3791d7;
+	}
+
+/* tous les autres liens hypertextes sur la page */
+a {
+	background: inherit;
+	color: #3182C0; 
+}
+a:hover {
+	background: inherit;
+	color: #72A545;
+}
+
+		/* images en tant que liens hypertextes         */
+		a img{
+			width:20px;
+		}
+		a:hover img {  
+		 width:25px;
+		  border: 2px solid #3791D7 !important; /* IE fix*/
+		  border: 2px solid #3791D7;
+		}
+/* la zone des commentaires */
+        #commentaire{
+            border-left:1px solid #b4c9d4;
+        }
+		/* chaque commentaire */
+			 #contenu{
+            word-wrap: break-word;
+            word-break: break-all;
+            width: 600px;
+             border-bottom:1px solid black;
+             text-align:left;
+             color:#666666;
+             font-weight:bolder;
+             font-family:Georgia, serif;
+        }
+	
+/* style identique pour chaque type d'element		 */
+ p, h1, h2, h3 {
+	margin: 10px 15px;
+}
+ul, ol {
+	 list-style:none;
+	margin: 10px 30px;
+	padding: 0 15px;	
+}
+ul span, ol span {
+	color: #666666;
+}
+
+/* les élément de la formulaire */
+form {
+	margin:10px; padding: 0;
+	border: 1px solid #f2f2f2; 
+	background-color: #FAFAFA; 
+}
+		/* zone de texte dans la formulaire */
+		input {
+			padding: 4px;
+			border:1px solid #eee;
+			font: normal 1em/1.5em Verdana, sans-serif;
+			color:#777;
+		}
+			/* boîte de commentaire */
+			textarea {
+				width:350px;
+				padding:4px;
+				font: normal 1em/1.5em Verdana, sans-serif;
+				border:1px solid #eee;
+				height:100px;
+				display:block;
+				color:#777;
+			}
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+/*
+  /* menu */
+#menu {
+	clear: both;
+	margin: 0; padding: 0;	
+}
+		#menu ul {	
+			position: relative; 
+			bottom: 4px;
+			margin: 0; padding: 0;	
+			float: left;
+			font: bold 1.4em 'Trebuchet MS', Tahoma, Arial, Sans-serif;
+			width: 850px;/* 775px; */
+			border: 1px solid #808080;
+			border-width: 0 0 4px 0;	
+			list-style: none;
+		}
+		
+			#menu ul li{
+				display: inline;	
+			}
+			
+				#menu ul li a {	
+					position: relative; bottom: -4px;
+					float: left;
+					color: #808080;
+					padding: 0px 10px;
+					text-decoration: none;
+					background: white url(menudivide.gif) repeat-y right top; 
+					border-bottom: 4px solid #808080; 	
+						}
+						
+							#menu ul li a:hover{
+								color: black;
+								background-color: #F3F3F3; 
+								border-bottom: 4px solid #3791D7;
+							}
+							#menu ul li#current a{
+								color: #333;
+								background-color: #F3F3F3; 
+								border-bottom: 4px solid #3791D7;
+							}
+/* les tables dans les trois colonnes							 */
+#tbox1,#tbox2,#tbox3 td {
+border-bottom: 1px solid #EFF0F1;
+padding: 2px 5px 2px 20px;	
+		}
+		
+/*        *********************************************************************************/*
+/* Three Columns                                                                 */
+/*********************************************************************************/
+/* zone qui contient les trois colonnes, le pieds, la tête */
+#wrap {
+	margin: 0 auto;
+    width: 850px;  	
+	text-align: left;		
+	background: #FFF;	
+}
+/* zone du contenu*/
+#three-column{
+	clear:both;
+   margin: 0; padding:0;
+	width: 850px;	
+}
+	/* header */
+#header {
+	position: relative;
+	background: url(images/headerbg-blue.gif) repeat-x;
+	height: 84px;	
+}
+		#header h1#logo {
+			position: absolute;
+			margin: 0; padding: 0;
+			font: bolder 4.1em 'Trebuchet MS', Arial, Sans-serif;
+			letter-spacing: -2px;
+			color: #CCC;
+			text-transform: UPPERCASE;
+			top: 0; left: 5px;	
+		}
+			#header h2#slogan {
+				position: absolute;
+				margin: 0; padding: 0;
+				font: bold 1em 'Trebuchet MS', Arial, Sans-serif;
+				text-transform: none;
+				color: #FFF;
+				top: 48px; left:65px;		
+			}
+
+/* colonne au milieu */
+#tbox2{
+	float: left;
+	margin-left: 15px;
+	padding: 0;
+	width: 54%;	
+	border-left: 1px solid #f2f2f2;
+}
+
+/* element dans la zone du contenu */
+	#tbox2 h1, #tbox3 h1 {
+	padding: 10px 0 5px 5px;
+	margin: 0 0 0 10px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #f2f2f2; 	
+}	
+#tbox3 h2{
+	padding: 10px 0 5px 5px;
+	margin: 0 0 0 20px;
+	text-transform: uppercase;
+}	
+/* colonne a gauche*/
+#tbox1{
+	float: left;
+	width: 21%;
+	margin: 0;	padding: 0; 
+	display: inline;	
+}
+/* colonn a droite */
+ #tbox3{
+	float: right;
+	width: 21%;
+	padding: 0;			
+}
+	/* pieds de la page */
+#footer {
+	clear:both;
+	background: #FFF url(footerbg.gif) repeat-x left top;
+	border-top: 1px solid #F2F2F2;
+	text-align: center;	
+	height: 50px;	
+}
+#footer a {
+	text-decoration: none;
+	font-weight: bold;
+}
+	
